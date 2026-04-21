@@ -116,6 +116,41 @@
                 transform: translateY(0);
             }
         }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        th {
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
     </style>
 </head>
 
@@ -123,6 +158,52 @@
     <div class="container">
         <h1>AME</h1>
         <p>Bienvenido a la nueva aplicación web. Un entorno dinámico, seguro y accesible desde cualquier lugar.</p>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>34</td>
+                        <td>56</td>
+                        <td>12</td>
+                        <td>89</td>
+                        <td>45</td>
+                        <td>67</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>92</td>
+                        <td>44</td>
+                        <td>73</td>
+                        <td>29</td>
+                        <td>51</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>55</td>
+                        <td>21</td>
+                        <td>76</td>
+                        <td>38</td>
+                        <td>94</td>
+                        <td>15</td>
+                        <td>62</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
             <a href="#" class="btn">Empezar ahora</a>
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ir a
