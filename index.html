@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
             --background-color: #0f172a;
             --text-color: #f8fafc;
         }
-        
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -81,22 +82,53 @@
             transform: scale(1.05);
         }
 
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(99, 102, 241, 0.15);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.2);
+        }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>ame</h1>
+        <h1>AME</h1>
         <p>Bienvenido a la nueva aplicación web. Un entorno dinámico, seguro y accesible desde cualquier lugar.</p>
-        <a href="#" class="btn">Empezar ahora</a>
+        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+            <a href="#" class="btn">Empezar ahora</a>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ir a
+                Google</a>
+        </div>
     </div>
 </body>
+
 </html>
