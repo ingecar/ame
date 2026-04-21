@@ -1,0 +1,6 @@
+# Carpetas locales de documentación
+Contexto/
+ame.wiki/
+
+# Archivos del sistema macOS
+.DS_Store
